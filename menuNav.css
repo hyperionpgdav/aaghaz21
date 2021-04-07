@@ -1,0 +1,283 @@
+/* CSS for the entire Page */
+*{
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(resources/back.gif);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+}
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.headings{
+    font-size: 2.2rem;
+}
+/* Menu Bar CSS */
+.menu{
+    font-size: 0;
+    position: sticky;
+    top: 0;
+    text-align: center;
+    z-index: 2;
+}
+.menu > a{
+    color: #ffffff;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 1.5rem;
+    padding: 0.5rem 1.5rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.menu > a:hover{
+    background-color: #0f0f0f91;
+    font-weight: 700;
+}
+@media screen and (max-width: 1085px){
+    #menuBar{
+        display: none;
+    }
+}
+/* Side Menu Bar CSS */
+.navBar{
+    background-color: #2b2b2b;
+    display: none;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    border-bottom: 1px solid #f1f1f1;
+}
+.navBar > div{
+    float: right;
+}
+
+@media screen and (max-width: 1085px){
+    .navBar{
+        display: block;
+    } 
+}
+.navIcon{
+    cursor: pointer;
+    padding: 0.25rem;
+}
+.bar1, .bar2, .bar3{
+    width: 35px;
+    height: 5px;
+    background-color: #ffffff;
+    margin: 6px 6px;
+    transition: 0.4s;
+    border-radius: 5px;
+}
+/* on click change */
+.change .bar1{
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+.change .bar2{
+    opacity: 0;
+}
+.change .bar3{
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/* Side Menu CSS */
+.sideNavSection{
+    display: none;
+    background-color: rgba(49, 45, 45, 0.8);
+    padding: 0.5rem;
+    transition: 0.2s;
+    z-index: 4;
+    position: fixed;
+    width: 100%;
+}
+.sideNavSection > a{
+    color: #ffffff;
+    display: block;
+    font-size: 1.3rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+/* Home CSS */
+.banner{
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    justify-items: center;
+}
+.banner > img{
+    display: block;
+    margin: auto;
+    width: 85%;
+    object-fit: contain;
+}
+@media screen and (max-width: 1200px)
+{
+    .banner > img{
+        width: 100%;
+    }
+}
+
+
+/* About Section CSS */
+.aboutSection{
+    width: 100%;
+}
+.aboutColumn{
+    width: 50%;
+    float: left;
+    color: #ffffff;
+    padding: 5%;
+}
+.aboutColumn >h2{
+    margin-bottom: 1rem;
+}
+.aboutColumn > div >p{
+    margin: 0.2rem 0;
+    font-size: 1.3rem;
+    text-align: justify;
+
+} 
+/* About Section Video CSS */
+.aboutVideo{
+    display: flex;
+    width: 100%;
+    justify-items: center;
+    object-fit: contain;
+}
+.aboutVideo > video{
+    width: 100%;
+    object-fit: contain;
+}
+@media screen and (max-width:1200px){
+    .aboutColumn{
+        width: 100%;
+    }
+    .aboutVideo {
+        width: 90%;
+    }
+}
+@media screen and (max-width:500px){
+    .aboutColumn > div >p{
+        margin: 0.3rem 0;
+    }
+}
+
+/* FAQ Section */
+.faqSection{
+    width: 100%;
+    padding: 5%;
+}
+.faqSection > h2{
+    color: #ffffff;
+}
+.collapsible{
+    width: 100%;
+    overflow: hidden;
+    margin: 1rem 0;
+}
+.question{
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    background-color: #dddddd;
+    opacity: 0.75;
+    text-align: left;
+    border-radius: 4px;
+}
+.active, .question:hover {
+    background-color: #2b2b2b;
+    color: #ffffff;
+    opacity: 1;
+}
+.question:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 1.3rem;
+    color: #000000;
+    float: right;
+    margin-left: 5px;
+}
+  
+.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+    color: #ffffff;
+}
+  
+.answer{
+    display: none;
+    padding: 1% 2%;
+    color: #ffffff;
+    font-size: 1.2rem;
+    background-color: rgba(37, 37, 37, 0.5);
+    overflow: hidden;
+}
+/* Footer Section */
+.footer{
+    background-color: #2b2b2b;
+    padding: 0.5rem;
+    border-top: #ffffff 2px solid;
+    color: #ffffff;
+}
+.footerSection{
+    width: 33%;
+    display: inline-block;
+    margin: auto;
+    padding: 0.5rem;
+    vertical-align: top;
+}
+
+.footerSection > div{
+    margin: 0.5rem 0;
+    display: block;
+}
+.footerSection > div > a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.footerSection > div > i{
+    margin-right: 0.5rem;
+}
+.footerSection > div > a > i{
+    margin-right: 0.5rem;
+}
+.footerSection > div > a> img{
+    width: 80%;
+    object-fit: contain;
+    display: block;
+}
+.footerRight{
+    float: right;
+    display: block;
+    text-align: right;
+}
+@media screen and (max-width: 899px){
+    .footerSection{
+        width: 100%;
+        font-size: 1.2rem;
+    }
+    .footerSection > div > a> img{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 399px){
+    .footerSection > div > a> img{
+        width: 80%;
+    }
+}
