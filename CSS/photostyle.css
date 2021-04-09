@@ -1,0 +1,167 @@
+/*  Photography Event Page */
+
+a {
+    color: #453ba0;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #f4eaf6;
+}
+
+body {
+    background-image: url(../resources/photography/backgroundPhotography.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    color: rgb(242, 216, 252);
+}
+
+h3 {
+    font-family: 'Times New Roman', Times, serif;
+    color: #0025fa;
+}
+
+.eventsSection {
+    width: 100%;
+}
+
+.eventsHeading {
+    font-size: 2.75rem;
+    text-align: center;
+    color: #0400ff;
+    margin: 0.75rem 0rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+
+/* CSS for dotted HR tag */
+
+hr {
+    margin: 2rem auto;
+    border-style: dotted none none;
+    width: 15%;
+    border-top-width: 0.5rem;
+    border-color: #2c1a92;
+}
+
+@media screen and (max-width: 1024px) {
+    hr {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    hr {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    hr {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    hr {
+        width: 70%;
+    }
+}
+
+
+/* Specific Event Section CSS*/
+
+.eventColumn {
+    width: 100%;
+    padding: 5%;
+    background-color: #070707b9;
+}
+
+.eventColumn>h3 {
+    font-size: 2rem;
+    color: #4c5ad8;
+    text-transform: uppercase;
+    margin: 1rem 0;
+}
+
+.eventImage {
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    object-fit: scale-down;
+}
+
+@media screen and (max-width: 700px) {
+    .eventImage {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+.eventImage>img {
+    object-fit: scale-down;
+    max-width: 100%;
+    display: block;
+}
+
+.eventRules>h4 {
+    color: #f4bdff;
+    font-size: 1.25rem;
+    text-decoration: underline;
+    margin: 0.5rem 0;
+}
+
+.eventRules>p {
+    font-size: 1.1rem;
+    color: #f1f1f1;
+    margin: 0.5rem 0;
+}
+
+.eventRules>h5 {
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.eventRules>a {
+    font-size: 1.2rem;
+    color: #ffffff;
+    display: block;
+}
+
+.eventButton {
+    text-align: center;
+    margin: 0.5rem 0;
+}
+
+.btn {
+    background: #340de0;
+    background-image: -webkit-linear-gradient(top, #1b0de0, #15085e);
+    background-image: -moz-linear-gradient(top, #450de0, #15085e);
+    background-image: -ms-linear-gradient(top, #0d11e0, #11085e);
+    background-image: -o-linear-gradient(top, #110de0, #15085e);
+    background-image: linear-gradient(to bottom, #450de0, #29085e);
+    -webkit-border-radius: 17;
+    -moz-border-radius: 17;
+    border-radius: 17px;
+    text-shadow: 3px 4px 6px #666666;
+    font-family: Georgia;
+    color: #f3e8fa;
+    font-size: 19px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #1900f5;
+    background-image: -webkit-linear-gradient(top, #0400f5, #000000);
+    background-image: -moz-linear-gradient(top, #3500f5, #000000);
+    background-image: -ms-linear-gradient(top, #4100f5, #000000);
+    background-image: -o-linear-gradient(top, #3500f5, #000000);
+    background-image: linear-gradient(to bottom, #3500f5, #000000);
+    text-decoration: none;
+}

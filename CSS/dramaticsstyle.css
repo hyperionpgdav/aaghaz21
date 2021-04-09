@@ -1,0 +1,167 @@
+/* Technical Event Page */
+
+a {
+    color: #a03b59;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #f4eaf6;
+}
+
+body {
+    background-image: url(../resources/dramatics/dramabg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    color: rgb(242, 216, 252);
+}
+
+h3 {
+    font-family: 'Times New Roman', Times, serif;
+    color: #fa0092;
+}
+
+.eventsSection {
+    width: 100%;
+}
+
+.eventsHeading {
+    font-size: 2.75rem;
+    text-align: center;
+    color: #ff7ec5;
+    margin: 0.75rem 0rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+
+/* CSS for dotted HR tag */
+
+hr {
+    margin: 2rem auto;
+    border-style: dotted none none;
+    width: 15%;
+    border-top-width: 0.5rem;
+    border-color: #921a42;
+}
+
+@media screen and (max-width: 1024px) {
+    hr {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    hr {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    hr {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    hr {
+        width: 70%;
+    }
+}
+
+
+/* Specific Event Section CSS*/
+
+.eventColumn {
+    width: 100%;
+    padding: 5%;
+    background-color: #070707b9;
+}
+
+.eventColumn>h3 {
+    font-size: 2rem;
+    color: #d84c6a;
+    text-transform: uppercase;
+    margin: 1rem 0;
+}
+
+.eventImage {
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    object-fit: scale-down;
+}
+
+@media screen and (max-width: 700px) {
+    .eventImage {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+.eventImage>img {
+    object-fit: scale-down;
+    max-width: 100%;
+    display: block;
+}
+
+.eventRules>h4 {
+    color: #ffbdd3;
+    font-size: 1.25rem;
+    text-decoration: underline;
+    margin: 0.5rem 0;
+}
+
+.eventRules>p {
+    font-size: 1.1rem;
+    color: #f1f1f1;
+    margin: 0.5rem 0;
+}
+
+.eventRules>h5 {
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.eventRules>a {
+    font-size: 1.2rem;
+    color: #ffffff;
+    display: block;
+}
+
+.eventButton {
+    text-align: center;
+    margin: 0.5rem 0;
+}
+
+.btn {
+    background: #e00d6f;
+    background-image: -webkit-linear-gradient(top, #e00d53, #5e082c);
+    background-image: -moz-linear-gradient(top, #e00d5e, #5e082c);
+    background-image: -ms-linear-gradient(top, #e00d65, #5e0825);
+    background-image: -o-linear-gradient(top, #e00d76, #5e0833);
+    background-image: linear-gradient(to bottom, #e00d4c, #5e0829);
+    -webkit-border-radius: 17;
+    -moz-border-radius: 17;
+    border-radius: 17px;
+    text-shadow: 3px 4px 6px #666666;
+    font-family: Georgia;
+    color: #f3e8fa;
+    font-size: 19px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #f5003d;
+    background-image: -webkit-linear-gradient(top, #f50072, #000000);
+    background-image: -moz-linear-gradient(top, #f5004a, #000000);
+    background-image: -ms-linear-gradient(top, #f50066, #000000);
+    background-image: -o-linear-gradient(top, #f50052, #000000);
+    background-image: linear-gradient(to bottom, #f5003d, #000000);
+    text-decoration: none;
+}
