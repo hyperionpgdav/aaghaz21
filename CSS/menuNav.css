@@ -283,3 +283,16 @@ body{
         width: 80%;
     }
 }
+.inauguration{
+    width: 100%;
+}
+.inauguration > div{
+    width: 90%;
+    margin: 5%;
+    object-fit: contain;
+}
+.inauguration > div > img{
+    max-width: 100%;
+    display: block;
+    
+}
